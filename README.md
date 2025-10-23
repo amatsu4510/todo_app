@@ -19,7 +19,9 @@
 1.  **WSL 2** および **Docker Desktop** (WSL 2 バックエンドを有効化) がインストールされていることを確認してください。
 2.  プロジェクトルート（WSL側のLinuxファイルシステム内）でDocker Composeを起動し、開発サーバーをコンテナ内で立ち上げます。
     ```bash
-    docker-compose up --build
+    cd todo_app/src
+    sudo npm install
+    sudo docker up --build
     ```
 3.  ブラウザで指定されたURL（通常は `http://localhost:3000`）にアクセスします。
 
